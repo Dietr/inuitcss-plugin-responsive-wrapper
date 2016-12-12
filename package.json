@@ -1,0 +1,16 @@
+{
+  "name": "inuitcss-plugin-responsive-wrapper",
+  "version": "1.0.0",
+  "description": "A responsive wrapper replacement for the default InuitCSS wrapper object.",
+  "main": "_objects.responsive-wrapper.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dietr/inuitcss-plugin-responsive-wrapper.git"
+  },
+  "author": "Dieter Peirs",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dietr/inuitcss-plugin-responsive-wrapper/issues"
+  },
+  "homepage": "https://github.com/Dietr/inuitcss-plugin-responsive-wrapper"
+}

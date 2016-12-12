@@ -1,0 +1,80 @@
+/* ==========================================================================
+   #WRAPPERS
+   ========================================================================== */
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+$inuit-wrapper-width: 900px !default;
+$inuit-wrapper-width-tiny: 400px !default;
+$inuit-wrapper-width-small: 600px !default;
+$inuit-wrapper-width-large: 1200px !default;
+$inuit-wrapper-width-huge: 1800px !default;
+$inuit-wrapper-breakpoint: medium !default;
+
+
+/* stylelint-disable */
+@if (type-of($inuit-wrapper-width) != number) {
+  @error "`#{$inuit-wrapper-width}` needs to be a number."
+}
+
+@if (type-of($inuit-wrapper-width-tiny) != number) {
+  @error "`#{$inuit-wrapper-width-tiny}` needs to be a number."
+}
+
+@if (type-of($inuit-wrapper-width-small) != number) {
+  @error "`#{$inuit-wrapper-width-small}` needs to be a number."
+}
+
+@if (type-of($inuit-wrapper-width-large) != number) {
+  @error "`#{$inuit-wrapper-width-large}` needs to be a number."
+}
+
+@if (type-of($inuit-wrapper-width-huge) != number) {
+  @error "`#{$inuit-wrapper-width-huge}` needs to be a number."
+}
+/* stylelint-enable */
+
+
+
+
+
+/* Default classes.
+   ========================================================================== */
+
+.o-wrapper {
+  padding-right: $inuit-global-spacing-unit;
+  padding-left:  $inuit-global-spacing-unit;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: $inuit-wrapper-width;
+
+  @include mq($inuit-wrapper-breakpoint) {
+    padding-right: $inuit-global-spacing-unit-large;
+    padding-left:  $inuit-global-spacing-unit-large;
+  }
+}
+
+
+
+
+
+/* Size variants.
+   ========================================================================== */
+
+.o-wrapper--tiny {
+  max-width: $inuit-wrapper-width-tiny;
+}
+
+.o-wrapper--small {
+  max-width: $inuit-wrapper-width-small;
+}
+
+.o-wrapper--large {
+  max-width: $inuit-wrapper-width-large;
+}
+
+.o-wrapper--huge {
+  max-width: $inuit-wrapper-width-huge;
+}
